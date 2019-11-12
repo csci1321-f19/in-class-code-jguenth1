@@ -9,11 +9,11 @@ class ChatManager() extends Actor {
   import ChatManager._
   def receive = {
     case NewChatter(name, sock, out, in) =>
-      context.actorOf(Props(new Chatter(name, sock, out, in), name))
+      //context.actorOf(Props(new Chatter(name, sock, out, in), name))
     case CheckAllInput =>
       for(child <- context.children) child ! Chatter.CheckInput
     case SendToAll(message) =>
-      for(child <- context.children) child ! Chatter.PrintMessage(messsage)
+      //for(child <- context.children) child ! Chatter.PrintMessage(messsage)
     case m => println("unhandled message in ChatManager")
   }
 }

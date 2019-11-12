@@ -6,12 +6,16 @@ class SortedLinkedListPriorityQueue[A](comp: (A,A) => Int) {
   
   def enqueue(value: A): Unit = {
     
-    if(comp(value, front) )
+    /*if(comp(value, front) > 0) {
+      val hold = front
+      front = new Node(value, hold)
+    }
     else { 
     var rover = front
     while( comp(value, rover.next.data) < 0) rover = rover.next
-    rover.next = 
-    
+    */
+    //rover.next.next = new Node(value, rover.next.next.next)  
+    //}
   }
   
   def dequeue():A = {

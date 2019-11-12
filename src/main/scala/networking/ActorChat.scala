@@ -13,7 +13,7 @@ object ActorChat extends App {
 
   val manager = system.actorOf(Props[ChatManager], "manager")
   implicit val ec = system.dispatcher
-  system.scheduler.schedule(0.1.second , manager, ChatManager.CheckAllInput)
+  //system.scheduler.schedule(0.1.second , manager, ChatManager.CheckAllInput)
   
   
 

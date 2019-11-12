@@ -1,6 +1,6 @@
 package adt
 
-class ListQueue[A]() extends MyQueue[A] {
+/*class ListQueue[A]() extends MyQueue[A] {
   import ListQueue._
   private var front: Node[A] = null
   private var back: Node[A] = null
@@ -23,4 +23,4 @@ class ListQueue[A]() extends MyQueue[A] {
 }
 object ListQueue {
   private class Node[A](val data: A,var next: Node[A])
-}
+}*/
